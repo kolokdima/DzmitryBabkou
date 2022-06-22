@@ -1,0 +1,26 @@
+    body{
+        max-width: 700px;
+    }
+    .top{
+        text-align: right; 
+    }
+    .font{
+        font-size: 16px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    span{
+        font-style: italic;
+    }
+    .main{
+        margin-left: 25px;
+        font-size: 20px; 
+        text-decoration: underline; 
+        font-weight: 900;
+    }
+    .style{
+        font-family: 'Bad Script', cursive;
+    }
+    .bottom{
+        text-align: left;
+    }
+
