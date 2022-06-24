@@ -1,5 +1,5 @@
     body{
-        max-width: 700px;
+        max-width: 650px;
     }
     .top{
         text-align: right; 
@@ -12,12 +12,14 @@
         font-style: italic;
     }
     .main{
-        margin-left: 25px;
-        font-size: 20px; 
+        text-indent: 25px;
         text-decoration: underline; 
+        font-size: 20px; 
         font-weight: 900;
     }
     .style{
+        text-indent: 25px;
+        text-align: justify;
         font-family: 'Bad Script', cursive;
     }
     .bottom{
