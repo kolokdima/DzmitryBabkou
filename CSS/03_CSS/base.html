@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        div.calendar{
+            width: 100%;
+            margin: 0%;
+        }
+        div.calendar > div{
+            background-color: #d3d3d3;
+            border: solid black;
+            position: relative;
+            cursor: pointer;
+            width: 237px;
+            border-radius: 3px;
+        }
+        .wed{
+            display: none;
+            width: 100px;
+            margin-top: 1px;
+        }
+        div.wed > div{
+            background-color: #d3d3d3;
+            border: solid black;
+            margin-bottom: 1px;
+            cursor: pointer;
+            border-radius: 3px;
+            width: 237px;
+        }
+        div.calendar > div:hover div.wed{
+            display: block;
+            position: absolute;
+            z-index: 1;
+            left: 100%;
+            top: 0%;
+            margin-top: -1.5px;
+        }
+        div.calendar > div:hover{
+            background-color: #818181;
+        }
+        @media all and (min-width:1439px){
+            .day1{
+            float: left;
+        }
+        .day6{
+            float: right;
+        }
+        .day{
+            float: left;
+        }
+        div.calendar > div:hover div.wed{
+            left: 0%;
+            top: 100%;
+            margin-top: 1.5px;
+        }
+        }
+    </style>
+<body>
+    <div class="calendar">
+        <div class="day1">Понедельник</div>
+        <div class="day">Вторник</div>
+        <div class="day">Среда
+            <div class="wed">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div class="day">Четверг</div>
+        <div class="day">Пятница</div>
+        <div class="day6">Суббота</div>
+    </div>
+</body>
+</html>
