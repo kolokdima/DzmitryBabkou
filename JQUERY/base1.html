@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+         body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        tr, td{
+            border-bottom:dotted;
+            border-right: dotted;
+        }
+        td:first-child{
+            font-weight: 900;
+        }
+        td:last-child{
+            border-right: none;
+        }
+        tr:nth-child(2n+1){
+            background-color: #d3d3d3;
+        }
+        tr:first-child{
+            background-color: #808080;
+            font-weight: 900;
+        }
+        table{
+            margin-left: 430px;
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            margin-left: 430px;
+            margin-top: 10px;
+        }
+    </style>
+    <body>
+        <table>
+            <tr id="one">
+                <td>ФИО</td>
+                <td>пол</td>
+                <td>должность</td>
+                <td>дата рож.</td>
+                <td>Данные 01</td>
+                <td>Данные 02</td>
+            </tr>
+            <tr id="two">
+                <td>Иванов Иван Иванович</td>
+                <td>М</td>
+                <td>начальник</td>
+                <td>01.01.1960</td>
+                <td>4567</td>
+                <td>3453</td>
+            </tr>
+            <tr id="three">
+                <td>Петрова Илона Петровна</td>
+                <td>Ж</td>
+                <td>секретарь</td>
+                <td>01.01.1979</td>
+                <td>98795</td>
+                <td>46523</td>
+            </tr>
+            <tr id="four">
+                <td>Сидоров Илья Игоревич</td>
+                <td>М</td>
+                <td>бухгалтер</td>
+                <td>01.01.1979</td>
+                <td>743434</td>
+                <td>987878</td>
+            </tr>
+            <tr id="five">
+                <td>Пупин Федор Федорович</td>
+                <td>М</td>
+                <td>водитель</td>
+                <td>01.01.1963</td>
+                <td>75324545</td>
+                <td>8782394</td>
+            </tr>
+            <tr id="six">
+                <td>Крупин Сергей Иванович</td>
+                <td>М</td>
+                <td>водитель 2</td>
+                <td>01.01.1983</td>
+                <td>3234564</td>
+                <td>329191826</td>
+            </tr>
+        </table>
+        <p>ДАННЫЕ О СОТРУДНИКАХ</p>
+        <button type="button" class="btn btn-primary">Показать все строки</button>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function($){
+       $("#six").on("click", function() {
+        $('#six').css('display', "none")
+       })
+       $("#five").on("click", function() {
+        $('#five').css('display', "none")
+       })
+       $("#four").on("click", function() {
+        $('#four').css('display', "none")
+       })
+       $("#three").on("click", function() {
+        $('#three').css('display', "none")
+       })
+       $("#two").on("click", function() {
+        $('#two').css('display', "none")
+       })
+       $("#one").on("click", function() {
+        $('#one').css('display', "none")
+       })
+       $("button").click(function() {
+        $("#one").show();
+        $("#two").show();
+        $("#three").show();
+        $("#four").show();
+        $("#five").show();
+        $("#six").show();
+        });
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</html>
