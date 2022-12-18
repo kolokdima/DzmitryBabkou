@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    div.table a{
+       color: green;
+    }
+    div.table td{
+        padding: 5px;
+        border-right: 3px solid red;
+    }
+    div.table td:last-child{
+        border-right: none;
+    }
+    div.table a:hover{
+        color: red;
+    }
+
+    div.link a{
+        color: green;
+        padding: 5px;
+        
+    }
+    div.link a:hover{
+        color: red;
+    }
+    div.link a:nth-child(-n+4) {
+        border-right: 3px solid red;
+    }
+
+    div.container div a{
+        float: left;
+        padding: 5px;
+        color: green;
+        
+    }
+    div.container div a:hover{
+        color:red;
+    }
+    span{
+        vertical-align: top;
+        padding: 3px;
+    }
+</style>
+<body>
+    <div class="table">
+    <table>
+        <tr>
+            <td><a href="">первая ссылка</a></td>
+            <td><a href="">вторая ссылка</a></td>
+            <td><a href="">третья ссылка</a></td>
+            <td><a href="">четвертая ссылка</a></td>
+            <td><a href="">пятая ссылка</a></td>
+        </tr>
+    </table>
+    </div>
+<br><br><br>
+    <div class='link'>
+        <a href=''>первая ссылка</a>
+        <a href=''>вторая ссылка</a>
+        <a href=''>третья ссылка</a>
+        <a href=''>четвёртая ссылка</a>
+        <a href=''>пятая ссылка</a>
+    </div>
+<br><br><br>
+    <div class="container">
+        <div><a href=""><span>первая ссылка</span><img src="pic.png" alt=""></a></div>
+        <div><a href=""><span>вторая ссылка</span><img src="pic.png" alt=""></a></div>
+        <div><a href=""><span>третья ссылка</span><img src="pic.png" alt=""></a></div>
+        <div><a href=""><span>четвертая ссылка</span><img src="pic.png" alt=""></a></div>
+        <div><a href="">пятая ссылка</a></div>
+    </div>
+
+</body>
+</html>

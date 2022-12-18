@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<style>
+    div{
+          font-family: 'Open Sans', sans-serif;}
+    div.title{
+    text-align: center; padding: 10px; background-color: #add8e6; text-transform: uppercase; font-size: 24px; color:blue; margin-bottom: -16px;}
+    div.font{background: url(font_1.png) repeat-y;}
+    div.menu{float: left; width:180px;}
+    div.content{margin-left:180px; background: url(ball.png) repeat-y top right;}
+    div.bottom{background-color: #add8e6; text-align:center; text-transform:uppercase; font-size: 24px; color: blue; padding: 10px;}
+    .football{float: left; margin: 10px;}
+    @media all and (max-width: 600px){
+    .football{width:100%; margin:0px;}
+    div.content{background-image: none;clear: both; float: right;width: 100%;}
+    div.title{display:none;}
+    div.menu{width:100%;clear: both;}
+    div{font-family: 'Roboto Slab', serif;}
+    li{display: inline-block;}
+    }
+</style>
+<body>
+    <div class="title">привет участникам соревнований!</div>
+    <div class="font">
+    <div class="menu"><p style="font-weight:bold ;padding:10px">Виды спорта:</p>
+                <ul style="margin:10px">
+            <li><a href="#">конькобежный спорт</a></li>
+            <li><a href="#">биатлон</a></li>
+            <li><a href="#">футбол</a></li>
+            <li><a href="#">стрельба из лука</a></li>
+            <li><a href="#">прыжки в длину</a></li>
+            <li><a href="#">прыжки в высоту</a></li>
+            <li><a href="#">фигурное катание</a></li>
+            <li><a href="#">синхронное плавание</a></li>
+            <li><a href="#">шахматы</a></li>
+            <li><a href="#">шашки</a></li>
+        </ul></div>
+    <div class="content"><p style="font-weight: bold; text-transform: uppercase; text-align: center;">футбол</p>
+        <img class="football" src="main.png">
+        <p style="margin: 10px">Футбол &mdash; командный вид спорта, в котором целью является забить мяч в ворота соперникак ногами или другими частями тела (кроме рук) большее количество раз, чем команда соперника.</p>
+        <p style="margin: 10px">Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов. Эти правила предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для таких групп, как юниоры, взрослые, женщины и люди с ограниченными физическими возможностями. Законы очень часто формулировались в общих чертах, которые позволяют упростить их применения в зависимости от характера игры.</p>
+     <div style='clear: both'></div>
+    </div></div>
+        <div class="bottom">главное не победа, а участие!</div>
+</body>
+</html>
